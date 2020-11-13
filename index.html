@@ -20,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
   
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
 <body>
    <header>
@@ -30,24 +30,13 @@
               <a href="index.html" onclick="window.open('index.html', '_self');"><img src="/image/ritz-logo-new-bold.jpeg" alt="logo" class = "logo" /></a>
           </div>
           
-          
-          
-          <button class="bars" aria-label="menu dropdown button" bar-btn>
-                
-                <div class="nav-icon">
-                  <div></div>
-                  </div>
-                </button>
-
-           
-       </div>
-       <nav class="open hide" menu-nav>
+          <nav class="open hide" menu-nav>
          <ul id="myTopnav" nav-ul  class="main-menu">
                     <li class="close" id="close-navigation-button" nav-close-btn><i class="fa fa-times"></i>
              </li>
                     <li>
                         <a href="/car-leasing/">
-                            Car lease<span class="mob1">&nbsp;deals</span>
+                             Car lease<span class="mob1">&nbsp;deals</span>
                         </a>
                     </li>
                     <li>
@@ -68,7 +57,18 @@
                         
                 </ul>  
        </nav>
-   </header>
+ 
+          
+          <button class="bars" aria-label="menu dropdown button" bar-btn>
+                
+                <div class="nav-icon">
+                  <div></div>
+                  </div>
+                </button>
+
+           
+       </div>
+         </header>
    <section class="section-one">
    <div class="all-display-div-holder">
     <div class="display-text-holder">
@@ -77,10 +77,28 @@
     </div> 
     
                        
-                 <div class="main-image-holder">
-         <img src="./image/CARS%20A.png" alt="vehicle-image" class="main-image">
-     <div class="link-to-details-div"><a href="#" class="link-to-details">See details <ion-icon name="chevron-forward-circle-outline"></ion-icon></a> </div>
+    <div class="main-image-holder"  id="slider">
+        <figure>
+<img src="./image/CARS-A.png" class="main-image" alt="vehicle-image">
+<img src="./image/CARS-B.png" class="main-image" alt="vehicle-image">
+<img src="./image/CARS-C.png" class="main-image" alt="vehicle-image">
+<img src="./image/bus-and-suv.jpeg" class="main-image" alt="vehicle-image">
+<img src="./image/suv.jpeg" class="main-image" alt="vehicle-image">
+</figure>
+
+<!--
+         <img src="./image/CARS-A.png" alt="vehicle-image" class="main-image">
+     
+-->
+     
+     
+     <div class="link-to-details-div">
+     <a href="#" class="link-to-details">See details <i class="fa fa-chevron-circle-right"></i> </a> </div>
      </div> 
+     <div class="call-us-div">
+         <a href="tel:+2347060710099" class="call-link">call us <i class="fas fa-phone"></i> </a>
+     </div>
+     
      <hr>  
    </section>
    <section>
@@ -91,48 +109,59 @@
            <div class="select-holder-div "><span id="basic-search-manufacturers" class="dropdown col1">
             <select id="manList"  aria-label="Any make" onchange="" class="car-make-search-div ">
 <option data-type="both" value="">Any make</option>
+<option title="Toyota" data-type="both" value="toyota">Toyota</option>
+
+<option title="Lexus" data-type="car" value="lexus">Lexus</option>
+
+<option title="Mercedes-Benz" data-type="both" value="mercedes-benz">Mercedes-Benz</option>
+
+
+
+<!--
 <option title="Abarth" data-type="car" value="abarth">Abarth</option>
 <option title="Alfa Romeo" data-type="car" value="alfa-romeo">Alfa Romeo</option>
 <option title="Alpine" data-type="car" value="alpine">Alpine</option>
+-->
 <option title="Audi" data-type="car" value="audi">Audi</option>
 <option title="BMW" data-type="car" value="bmw">BMW</option>
 <option title="Citroen" data-type="both" value="citroen">Citroen</option>
+<!--
 <option title="Dacia" data-type="car" value="dacia">Dacia</option>
 <option title="DS" data-type="car" value="ds">DS</option>
+-->
 <option title="FIAT" data-type="both" value="fiat">FIAT</option>
 <option title="Ford" data-type="both" value="ford">Ford</option>
 <option title="Honda" data-type="car" value="honda">Honda</option>
 <option title="Hyundai" data-type="car" value="hyundai">Hyundai</option>
 <option title="Isuzu" data-type="van" value="isuzu">Isuzu</option>
-<option title="Isuzu Trucks" data-type="van" value="isuzu-trucks">Isuzu Trucks</option>
+<option title="Isuzu Trucks" data-type="van" value="isuzu-trucks">Is uzu Trucks</option>
 <option title="Iveco" data-type="van" value="iveco">Iveco</option>
 <option title="Jaguar" data-type="car" value="jaguar">Jaguar</option>
 <option title="Jeep" data-type="car" value="jeep">Jeep</option>
 <option title="KIA" data-type="car" value="kia">KIA</option>
 <option title="Land Rover" data-type="both" value="land-rover">Land Rover</option>
-<option title="Lexus" data-type="car" value="lexus">Lexus</option>
 <option title="Lotus" data-type="car" value="lotus">Lotus</option>
 <option title="Man" data-type="van" value="man">Man</option>
 <option title="Maserati" data-type="car" value="maserati">Maserati</option>
 <option title="Mazda" data-type="car" value="mazda">Mazda</option>
-<option title="Mercedes-Benz" data-type="both" value="mercedes-benz">Mercedes-Benz</option>
-<option title="MG Motor UK" data-type="car" value="mg-motor-uk">MG Motor UK</option>
-<option title="MINI" data-type="car" value="mini">MINI</option>
+<!--<option title="MG Motor UK" data-type="car" value="mg-motor-uk">MG Motor UK</option>-->
+<!--<option title="MINI" data-type="car" value="mini">MINI</option>-->
 <option title="Mitsubishi" data-type="both" value="mitsubishi">Mitsubishi</option>
 <option title="Nissan" data-type="both" value="nissan">Nissan</option>
 <option title="Peugeot" data-type="both" value="peugeot">Peugeot</option>
-<option title="Polestar" data-type="car" value="polestar">Polestar</option>
+<!--<option title="Polestar" data-type="car" value="polestar">Polestar</option>-->
 <option title="Porsche" data-type="car" value="porsche">Porsche</option>
 <option title="Renault" data-type="both" value="renault">Renault</option>
-<option title="SEAT" data-type="car" value="seat">SEAT</option>
+<!--<option title="SEAT" data-type="car" value="seat">SEAT</option>-->
 <option title="Skoda" data-type="car" value="skoda">Skoda</option>
+<!--
 <option title="Smart" data-type="car" value="smart">Smart</option>
 <option title="Ssangyong" data-type="both" value="ssangyong">Ssangyong</option>
 <option title="Subaru" data-type="car" value="subaru">Subaru</option>
+-->
 <option title="Suzuki" data-type="car" value="suzuki">Suzuki</option>
 <option title="Tesla" data-type="car" value="tesla">Tesla</option>
-<option title="Toyota" data-type="both" value="toyota">Toyota</option>
-<option title="Vauxhall" data-type="both" value="vauxhall">Vauxhall</option>
+<!--<option title="Vauxhall" data-type="both" value="vauxhall">Vauxhall</option>-->
 <option title="Volkswagen" data-type="both" value="volkswagen">Volkswagen</option>
 <option title="Volvo" data-type="car" value="volvo">Volvo</option>
 </select>
@@ -194,7 +223,7 @@
            
        </div>
        <div class="reviews">
-           <div class="partnership-holder"><a href="#" class="partnership-link"><img src="./image/partnership-icon.png" alt="" class="partnership-logo"> PARTNERSHIP </a></div>
+           <div class="partnership-holder"><a href="#" class="partnership-link"><img src="./image/partnership-icon.png" alt="" class="partnership-logo"> <br>PARTNERSHIP </a></div>
            
        </div>
        
@@ -208,5 +237,6 @@
    </footer>
      
 <script src="./js/index.js"></script>
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </body>
 </html>

@@ -23,3 +23,13 @@ function toggleMenu (e) {
 
 $barBtn.addEventListener('click', toggleMenu);
 
+
+var docWidth = document.documentElement.offsetWidth;
+[].forEach.call(
+  document.querySelectorAll('*'),
+  function(el) {
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  }
+);
