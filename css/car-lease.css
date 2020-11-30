@@ -1,0 +1,142 @@
+ * {
+        box-sizing: border-box;
+      }
+      .slider {
+        width: 300px;
+        text-align: center;
+        overflow: hidden;
+          background-color:#f8f5fa;
+          border-radius: 10px;
+          padding: 5px;
+          
+      }
+      .slides {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+      }
+      .slides::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+      }
+      .slides::-webkit-scrollbar-thumb {
+        background: #fff;
+        border-radius: 10px;
+      }
+      .slides::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .slides > div {
+        scroll-snap-align: start;
+        flex-shrink: 0;
+        width: 300px;
+        height: 300px;
+        margin-right: 6px;
+        border-radius: 10px;
+        background: #fff;
+        transform-origin: center center;
+        transform: scale(1);
+        transition: transform 0.5s;
+        position: relative;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+          }
+
+      .slide-link{
+        display: inline-flex;
+        width: 1.5rem;
+        height: 1.5rem;
+        background: #fff;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin: 0 0 0.5rem 0;
+        position: relative;
+      }
+
+
+
+      .slider > a:active {
+        top: 1px;
+        color: #1c87c9;
+      }
+      .slider > a:focus {
+        background: #f5d9d9;
+      }
+      /* Don't need button navigation */
+      @supports (scroll-snap-type) {
+        .slider > a {
+          display: none;
+        }
+      }
+
+      car-pics-container-div {
+        height: 100%;
+        overflow: auto;
+      }
+      .cars-pics-div {
+        display: flex;
+        align-items: center;
+        justify-content: ;
+        
+        font-family: 'Ropa Sans', sans-serif;
+      }
+
+.slides > div > img {
+    max-width: 100%;
+    max-height: 100%;
+    width: inherit;
+}
+
+
+.slide-img-holder{
+    
+}
+
+.prev-holder-div{
+    position: relative;
+    top: -13rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 0px;
+}
+
+
+.next-holder-div{
+    position: relative;
+    top: -13rem;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    margin-left: 93%;
+    height: 0px;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  width: auto;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: ;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
