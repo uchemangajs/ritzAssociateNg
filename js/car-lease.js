@@ -1,6 +1,13 @@
 "use strict"
-const bookingLink = document.querySelector('[booking-link]');
-const bookingForm = document.querySelector('[booking-form]');
+const sliderDiv = document.getElementsByClassName('slider');
 
-bookingLink.addEventListener('click', () => {bookingForm.classList.toggle("hide")
-console.log('hit')});
+
+
+for(let i = 0; i < sliderDiv.length; i++){
+ let bookingLink = sliderDiv[i].querySelector('[booking-link]');
+let bookingForm = sliderDiv[i].querySelector('[booking-form-div]');
+
+ bookingLink.addEventListener('click', () => { bookingForm.classList.toggle("collapse");});
+   
+   
+}
