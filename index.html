@@ -7,11 +7,8 @@
     <title>Ritz Associate vehicle Leasing</title>
     <link href="./css/index.css" rel="stylesheet" type="text/css"> 
       
-<!--
-    <link href="./css/header.css" rel="stylesheet" type="text/css"> 
-          
--->
-    <link rel="manifest" href="manifest.json">
+
+    <!-- <link rel="manifest" href="manifest.json"> -->
 
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -61,7 +58,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="./html/contact-us.html">
+                        <a href="/html/contact-us.html">
                             Contact<span class="mob2">&nbsp;us</span>
                         </a>
                     </li>
@@ -103,14 +100,10 @@
 <img src="./image/prado-event.jpg" class="main-image" alt="vehicle-image">
 </figure>
 
-<!--
-         <img src="./image/CARS-A.png" alt="vehicle-image" class="main-image">
-     
--->
      
      
      <div class="link-to-details-div">
-     <a href="#" class="link-to-details">See details <i class="fa fa-chevron-circle-right"></i> </a> </div>
+     <a href="/html/suv-lease.html" class="link-to-details">See details <i class="fa fa-chevron-circle-right"></i> </a> </div>
      </div> 
      <div class="call-us-div">
          <a href="tel:+2347060710099" class="call-link">call us <i class="fas fa-phone"></i> </a>
@@ -121,35 +114,26 @@
    <section>
       <div class="section-two-holder-div">
        <div class="search-option-holder">
-          <form action="" class="search-vehicle-form" >
+          <div action="" class="search-vehicle-form" >
            <div class="search-title-div ">Find your perfect car Lease deal</div>
            <div class="select-holder-div "><span id="basic-search-manufacturers" class="dropdown col1">
             <select id="manList"  aria-label="Any make" onchange="" class="car-make-search-div ">
 <option data-type="both" value="">Any make</option>
-<option title="Toyota" data-type="both" value="toyota"><a href="./html/car-lease.html"> Saloon Cars<span class="mob1">&nbsp;</span>
+<option title="Toyota" data-type="both" value="toyota"><a href="./html/car-lease.html"> Toyota<span class="mob1">&nbsp;</span>
                         </a></option>
 
 <option title="Lexus" data-type="car" value="lexus">Lexus</option>
+<option title="Honda" data-type="car" value="honda">Honda</option>
 
 <option title="Mercedes-Benz" data-type="both" value="mercedes-benz">Mercedes-Benz</option>
 
 
-
-<!--
-<option title="Abarth" data-type="car" value="abarth">Abarth</option>
-<option title="Alfa Romeo" data-type="car" value="alfa-romeo">Alfa Romeo</option>
-<option title="Alpine" data-type="car" value="alpine">Alpine</option>
--->
 <option title="Audi" data-type="car" value="audi">Audi</option>
 <option title="BMW" data-type="car" value="bmw">BMW</option>
 <option title="Citroen" data-type="both" value="citroen">Citroen</option>
-<!--
-<option title="Dacia" data-type="car" value="dacia">Dacia</option>
-<option title="DS" data-type="car" value="ds">DS</option>
--->
+
 <option title="FIAT" data-type="both" value="fiat">FIAT</option>
 <option title="Ford" data-type="both" value="ford">Ford</option>
-<option title="Honda" data-type="car" value="honda">Honda</option>
 <option title="Hyundai" data-type="car" value="hyundai">Hyundai</option>
 <option title="Isuzu" data-type="van" value="isuzu">Isuzu</option>
 <option title="Isuzu Trucks" data-type="van" value="isuzu-trucks">Is uzu Trucks</option>
@@ -162,24 +146,18 @@
 <option title="Man" data-type="van" value="man">Man</option>
 <option title="Maserati" data-type="car" value="maserati">Maserati</option>
 <option title="Mazda" data-type="car" value="mazda">Mazda</option>
-<!--<option title="MG Motor UK" data-type="car" value="mg-motor-uk">MG Motor UK</option>-->
-<!--<option title="MINI" data-type="car" value="mini">MINI</option>-->
+
 <option title="Mitsubishi" data-type="both" value="mitsubishi">Mitsubishi</option>
 <option title="Nissan" data-type="both" value="nissan">Nissan</option>
 <option title="Peugeot" data-type="both" value="peugeot">Peugeot</option>
-<!--<option title="Polestar" data-type="car" value="polestar">Polestar</option>-->
+
 <option title="Porsche" data-type="car" value="porsche">Porsche</option>
 <option title="Renault" data-type="both" value="renault">Renault</option>
-<!--<option title="SEAT" data-type="car" value="seat">SEAT</option>-->
+
 <option title="Skoda" data-type="car" value="skoda">Skoda</option>
-<!--
-<option title="Smart" data-type="car" value="smart">Smart</option>
-<option title="Ssangyong" data-type="both" value="ssangyong">Ssangyong</option>
-<option title="Subaru" data-type="car" value="subaru">Subaru</option>
--->
+
 <option title="Suzuki" data-type="car" value="suzuki">Suzuki</option>
 <option title="Tesla" data-type="car" value="tesla">Tesla</option>
-<!--<option title="Vauxhall" data-type="both" value="vauxhall">Vauxhall</option>-->
 <option title="Volkswagen" data-type="both" value="volkswagen">Volkswagen</option>
 <option title="Volvo" data-type="car" value="volvo">Volvo</option>
 </select>
@@ -187,23 +165,24 @@
         </span>
 
         <span class="dropdown col1" id="rangeContainer">
-            <select id="ranList" aria-label="Select Range" class="car-model-search-div ">
-                <option title="" value="">Any model</option>
+            <select id="model-list" aria-label="Select Range" class="car-model-search-div ">
+                <option title="" value="title">Any model</option>
+                <option title="" value="cars">Sedan Cars</option>
+                 <option title="" value="suv">SUV</option>
+                  <option title="" value="bus">Bus</option>
+                  <option title="" value="van">Van</option>
+                  <option title="" value="bullet-proof-suv">Bullet Proof SUV</option>
+                 <option title="" value="bullet-proof-bus">Bullet Proof BUS</option>
+                  <option title="" value="spu">Special Protection Unit(SPU)</option>
             </select>
         </span>
         
-        <span class="dropdown col1" id="rangeContainer">
-            <select id="ranList" aria-label="Select Range" class="special-purpose-vehicle ">
-                <option title="" value="">Bullet Proof SUV</option>
-                 <option title="" value="">Bullet Proof Bus</option>
-                  <option title="" value="">Special Protection Unit(SPU)</option>
-            </select>
-        </span>
 
 
 </div>
- <input type="submit" value="find vehicle" class="search-button">
-           </form>
+              <button  class="search-button" id = "submit-btn">find vehicle"</button>
+           </div>
+           
            
 <div class="special-request-div">
     <a href="./html/contact-us.html" class="special-request-link"><img src="./image/special-request-click-icon.2.png" alt="request-icon" class="special-request-click">Special Request</a></div>
@@ -217,33 +196,33 @@
    <div class="info-banner">
             <div class="wrapper">
 
-                <a class="info-banner-container" href="/car-leasing-news/coronavirus-how-its-affecting-the-car-leasing-sector/" rel="nofollow">
+                <div class="info-banner-container"  rel="">
                     <div class="info-banner-description">
                         <span class="info-banner-title">OPEN FOR BUSINESS</span>
                         <span class="info-banner-separator"></span>
 
-                        <span class="info-banner-text">'Click and collect' or<br> delivery to your door.<br> Compare deals and apply online now.</span>
+                        <span style="font-variant: small-caps" class="info-banner-text" > spot lease | short lease <br> Long lease | partnership.<br> fleet management.</span>
                     </div>
 
-                    <div class="info-banner-cta">
+                    <a href="/html/partnership.html" class="info-banner-cta">
                         <div class="info-banner-cta-link">Read more</div>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
         </div>
     
    <footer class="footer">
       <div class="link-and-review">
        <div class="footer-links-div">
-          <a href="#" class="footer-link">About Us</a>
+          <a href="/html/about-ritz.html" class="footer-link">About Us</a>
           <a href="#" class="footer-link">Privacy and Terms</a>
-          <a href="#" class="footer-link">Help and Support</a>
-          <a href="#" class="footer-link">Contact Us</a>
-          <a href="#" class="footer-link">Reviews</a>
+          <a href="/html/about-ritz.html" class="footer-link">Help and Support</a>
+          <a href="/html/about-ritz.html" class="footer-link">Contact Us</a>
+          <a href=" href="https://g.page/ritz-associates/review?gm"" class="footer-link">Reviews</a>
            
        </div>
        <div class="reviews">
-           <div class="partnership-holder"><a href="#" class="partnership-link"><img src="./image/partnership-icon.png" alt="" class="partnership-logo"> <br>PARTNERSHIP </a></div>
+           <div class="partnership-holder"><a href="/html/partnership.html" class="partnership-link"><img src="./image/partnership-icon.png" alt="" class="partnership-logo"> <br>PARTNERSHIP </a></div>
            
        </div>
        

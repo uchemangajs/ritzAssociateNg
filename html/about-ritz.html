@@ -4,41 +4,17 @@
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="../css/contact-us.css" rel="stylesheet" type="text/css"> 
+<link href="../css/about-us.css" rel="stylesheet" type="text/css"> 
     
+          
 <link href="../css/header.css" rel="stylesheet" type="text/css"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/integration
-            emailjs.init('user_KxoKDWu1ownLLptlCQI8O');
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
-                    .then(function() {
-                        console.log('SUCCESS!'); location.reload();
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    })
-//                .then(function(){location.reload})
-                
-            });
-        }
-    </script>
-
-    <title>Ritz Associate Contact</title>
+    <title>About RzAL</title>
     
 </head>
 <body>
-   <header>
+<header>
       
        <div class="header-container">
           <div class="logo-container">
@@ -100,74 +76,67 @@
        </div>
          </header>
 
-<h2>Please get in touch</h2>
-<div class="address-container">
-   <div class="address-holder">
-     <h4 class="address-title">Lagos Office:</h4>
-<p class="contact-address">7 Captain Olajide George Street, Lekki Phase 1, Lagos State. </p>
-<hr>
-<h4 class="address-title">Port Harcourt Office: </h4> 
-<p class="contact-address">70 AdaGeorge Road, Port Harcourt, Rivers State</p> 
-<hr>
+<div class="about-section">
+  <h1>About Us Page</h1>
+  
+  <p class="p-one">
+          RITZ ASSOCIATES LIMITED is a Nigerian entity in the business of Sales, Procurement and Bespoke logistics services in automobiles supply and services in Nigeria.  
+        </p>
+        
+        <p class="p-two">
+            We provide a smart way to hire office and project vehicles like Toyota Hilux Vans, Toyota Hiace Buses, Coaster Buses, SUVs and Salon cars on both short term and long term basis within Lagos State and Rivers State.
+        </p>
+        
+        <p class="p-three">
+          Ritz Associates enshrines “Hard work” and “Honesty” as the guiding principles for ensuring our people and processes are edged in Excellence.  
+        </p>
+  
+  
 </div>
 
-<h4 class="phone-contact">+234(0)7060710099 <br> +234(0)8121716390</h4>
+<h2 style="text-align:center">Our Clients</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="../image/clients/nnpc.png" alt="NNPC" style="width:100%">
+      </div>
+  </div>
 
-<h4 class="email-contact">Email: ritzassociateslimited@gmail.com</h4>
-
-</div>
-
-<div class="container">
-  <form id="contact-form">
-   <input type="hidden" name="contact_number">
-   
-    <div class="row">
-      <div class="col-25">
-        <label for="fname">First Name</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="fname" name="user_name" placeholder="Your name..">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="lname">Last Name</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="lname" name="user_name" placeholder="Your last name..">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="user_email">Phone</label>
-      </div>
-      <div class="col-75">
-        <!-- <select id="country" name="country">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
-        </select> -->
+  <div class="column">
+    <div class="card">
+      <img src="../image/clients/icrc.png" alt="ICRC" style="width:100%">
       
-        <input type="telephone" name="user_email">
-
-
-      </div>
     </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="subject">Subject</label>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="../image/clients/mantra.png" alt="MANTRA SECURITY" style="width:100%">
       </div>
-      <div class="col-75">
-        <textarea id="subject" name="message" placeholder="Write something.." style="height:200px"></textarea>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="../image/clients/npa.png" alt="NPA" style="width:100%">
       </div>
-    </div>
-    <div class="row">
-      <input name="btn" type="submit" value="send" />
-    </div>
-  </form>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="../image/clients/lng.png" alt="LNG" style="width:100%">
+      </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="../image/clients/innergalaxy.png" alt="INNERGALAXY" style="width:100%">
+      </div>
+  </div>
 </div>
 
- <footer class="footer">
+
+
+<footer class="footer">
       <div class="link-and-review">
        <div class="footer-links-div">
           <a href="#" class="footer-link">About Us</a>
@@ -190,11 +159,6 @@
     </div>
 </div>
    </footer>
-
-
-<!--<script src="../js/index.js"></script>-->
-<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-
-
 </body>
 </html>
+
