@@ -20,13 +20,13 @@ h2{
     text-align: center;
 }
 .contact-address{
-    background-color: #3b2156
+    background-color: #3b2156;
   text-align: center;
     margin-top: -1px;
 }
-.phone-contact{
+/* .phone-contact{ */
     
-}
+/* } */
 .email-contact{
    margin-top: -3px; 
 }
