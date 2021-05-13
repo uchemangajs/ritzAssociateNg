@@ -20,7 +20,8 @@ h2{
     text-align: center;
 }
 .contact-address{
-    background-color: #3b2156;
+/*    background-color:;*/
+    font-variant: small-caps;
   text-align: center;
     margin-top: -1px;
 }
