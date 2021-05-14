@@ -53,36 +53,36 @@ submitBtn.addEventListener('click', () => {
 //    console.log(selectOption[i].value)
      
         if( selectOption[1].selected) {
-          document.location.href='./../html/car-lease.html';
+          document.location.href='ritzAssociatesNg/html/car-lease.html';
           break;}
 
           if (selectOption[2].selected){
-               document.location.href='./../html/suv-lease.html';
+               document.location.href='ritzAssociatesNg/html/suv-lease.html';
               return;
              };
 
              if (selectOption[3].selected){
-                 document.location.href='./../html/bus-lease.html';
+                 document.location.href='ritzAssociatesNg/html/bus-lease.html';
                  return;
                 };
             
                 if (selectOption[4].selected){
-                 document.location.href='./../html/van-lease.html';
+                 document.location.href='ritzAssociatesNg/html/van-lease.html';
                  return;
                };
 
                if (selectOption[5].selected){
-                document.location.href='./../html/special-purpose.html';
+                document.location.href='ritzAssociatesNg/html/special-purpose.html';
                 return;
               };
 
               if (selectOption[6].selected){
-                document.location.href='./../html/special-purpose.html';
+                document.location.href='ritzAssociatesNg/html/special-purpose.html';
                 return;
               };
 
               if (selectOption[7].selected){
-                document.location.href='./../html/special-purpose.html';
+                document.location.href='ritzAssociatesNg/html/special-purpose.html';
                 return;
               };
                }
