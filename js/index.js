@@ -53,7 +53,7 @@ submitBtn.addEventListener('click', () => {
 //    console.log(selectOption[i].value)
      
         if( selectOption[1].selected) {
-          document.location.href='../html/car-lease.html';
+          document.location.href='../../html/car-lease.html';
           break;}
 
           if (selectOption[2].selected){
