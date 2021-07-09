@@ -1,0 +1,9 @@
+steps:
+- name: 'gcr.io/cloud-builders/gcloud'
+  entrypoint: 'bash'
+  args:
+  - '-c'
+  - |
+    gcloud auth list
+    gcloud config set project direct-airfoil-318518
+    gcloud beta compute ssh --zone "us-central1-a" "server"  --project "direct-airfoil-318518" --command "cd /var/www/html/github_uchemangajs_ritzassociateng && git pull && sudo service nginx restart && echo "Done""
